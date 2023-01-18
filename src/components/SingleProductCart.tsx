@@ -1,7 +1,5 @@
 
 import React from 'react'
-import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { MdFavoriteBorder } from 'react-icons/md'
 import Cart from '../icons/cart.png'
 function SingleProductCart() {
     return (
@@ -12,7 +10,10 @@ function SingleProductCart() {
                     <p>product name</p>
                     <section>
                         <button>
-                            <img width='30px' src={require('../icons/cart.png')} alt="" />
+                            <span className="absolute hover:animate-ping inline-flex h-5 w-5 rounded-full bg-blue-800 "></span>
+                            <img className='relative rounded-full' width={'40px'} height={'40px'} src={require('../icons/cart.png')} alt="" />
+                            {/* <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span> */}
+                            {/* <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span> */}
                         </button>
                         <button>
                             <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
