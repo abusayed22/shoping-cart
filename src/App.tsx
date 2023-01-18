@@ -6,7 +6,7 @@ import Cart from './pages/Cart';
 
 function App() {
   return (
-    <div className='bg-gradient-to-r from-slate-700 to-black bg-emerald-400'>
+    <div className='bg-gradient-to-r from-rose-400 to-lime-400 min-h-screen'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="shop" element={<Shop />} />

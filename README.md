@@ -1,6 +1,7 @@
 <ul>
  <li>Typescript</li>
  <li><b>CSS:</b>Tailwindcss</li>
+ <li><b>Fonts:</b>react-icons</li>
  <li>
   <b>Tools</b>
    <ul>
