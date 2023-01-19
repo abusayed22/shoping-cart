@@ -1,5 +1,6 @@
 
 import React from 'react'
+import img from '../icons/Screenshot_2.png'
 
 
 function SingleProductCart() {
@@ -7,7 +8,9 @@ function SingleProductCart() {
         <div className=''>
             <div className='w-80 h-96 md:w-52 bg-red-300 my-3 flex justify-center items-center  md:h-72 rounded-lg md:rounded-md shadow-2xl bg-opacity-100 md:mx-5'>
                 <div className='w-64 h-80 md:w-44 md:h-64 rounded-2xl bg-red-100 flex flex-col items-center justify-end'>
-                    <section></section>
+                    <section className='border-solid'>
+                        <img src={img} alt="" />
+                    </section>
                     <b>pant</b>
                     <p>Price: <span>1290</span></p>
                     <section>
