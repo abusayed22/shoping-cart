@@ -11,3 +11,4 @@
    </ul>
  </li>
 </ul>
+<b>Responsive</b>
