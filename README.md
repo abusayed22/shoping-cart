@@ -5,7 +5,7 @@
  <li>
   <b>Tools</b>
    <ul>
-    <li>redux/react-redux</li>
+    <li>redux/react-redux</li> devtools-extensions
     <li>axios</li>
     <li>react-router-dom</li>
    </ul>

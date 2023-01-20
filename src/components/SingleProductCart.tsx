@@ -1,18 +1,25 @@
 
 import React from 'react'
 import img from '../icons/Screenshot_2.png'
+import { formatCurreny } from '../utlilities/FormatCurrency'
 
+type dataProps = {
+    id: number,
+    productName: string,
+    img?: string
+    price: number
+}
+function SingleProductCart({ id, productName, price }: dataProps) {
 
-function SingleProductCart() {
     return (
-        <div className=''>
+        <div>
             <div className='w-80 h-96 md:w-52 bg-red-300 my-3 flex justify-center items-center  md:h-72 rounded-lg md:rounded-md shadow-2xl bg-opacity-100 md:mx-5'>
                 <div className='w-64 h-80 md:w-44 md:h-64 rounded-2xl bg-red-100 flex flex-col items-center justify-end'>
                     <section className='border-solid'>
                         <img src={img} alt="" />
                     </section>
-                    <b>pant</b>
-                    <p>Price: <span>1290</span></p>
+                    <b>{productName}</b>
+                    <p>Price: <span>{formatCurreny(price)}</span></p>
                     <section>
                         <button>
                             <img className='relative rounded-full h-10 w-10 bg-rose-600 mr-3' width={'40px'} height={'40px'} src={require('../icons/cart.png')} alt="" />
