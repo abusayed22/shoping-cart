@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Cart() {
   return (
-    <div className='w-[450px] h-[80vh] bg-slate-100 mx-auto my-8 shadow-xl rounded-md'>
+    <div className='w-[450px] md:w-[550px] h-[80vh] bg-slate-100 mx-auto my-8 shadow-xl rounded-md'>
       <h3 className='font-bold pt-5 pl-3 text-cyan-500 underline underline-offset-8'>Shoping Cart..</h3>
       <br />
-      <hr className='bg-red-400' />
+      <hr />
       {/* Table */}
 
       <div className="relative overflow-x-auto">
