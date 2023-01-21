@@ -5,16 +5,19 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
+import { useCartProvider } from './context/shopingcart/shopingCartContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <Provider store={store}>
+  // <Provider store={store}>
+  <useCartProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </Provider>
+  </useCartProvider>
+  // </Provider>
 );
 
 
